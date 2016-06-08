@@ -1,0 +1,97 @@
+/* * *
+* Telegram Log Scraper
+* Written by William Thomas (http://willseph.com)
+* Licenced under the GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007:
+* 
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+* 
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+* 
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+* * */
+
+.telegramlogscraper_shade {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.85);
+	width: 100vw;
+	height: 100vh;
+	z-index: 999;
+	cursor: default;
+}
+
+.telegramlogscraper_shade_content {
+	width: 100vw;
+	height: 100px;
+	position: fixed;
+	top:calc(50vh - 50px);
+	left: 0;
+	text-align: center;
+}
+
+.telegramlogscraper_shade_text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 51px;
+	vertical-align: middle;
+	line-height: 51px;
+	color: #eee;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.cssload-container {
+	width: 100%;
+	height: 49px;
+	text-align: center;
+	position: absolute;
+	top: 51px;
+	left: 0;
+}
+
+.cssload-speeding-wheel {
+	width: 49px;
+	height: 49px;
+	margin: 0 auto;
+	border: 3px solid rgb(238,238,238);
+	border-radius: 50%;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	animation: cssload-spin 575ms infinite linear;
+		-o-animation: cssload-spin 575ms infinite linear;
+		-ms-animation: cssload-spin 575ms infinite linear;
+		-webkit-animation: cssload-spin 575ms infinite linear;
+		-moz-animation: cssload-spin 575ms infinite linear;
+}
+
+
+
+@keyframes cssload-spin {
+	100%{ transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-o-keyframes cssload-spin {
+	100%{ -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-ms-keyframes cssload-spin {
+	100%{ -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-webkit-keyframes cssload-spin {
+	100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-moz-keyframes cssload-spin {
+	100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}

@@ -1,0 +1,21 @@
+{
+   "author": "William Thomas",
+   "description": "Scapes Telegram logs for local storage",
+   "homepage_url": "http://willseph.com/",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "manifest_version": 2,
+   "name": "Telegram Log Scraper",
+   "permissions": [ "fileSystem", "https://web.telegram.org/" ],
+   "version": "0.0.1",
+   "content_scripts": [
+    {
+      "matches": ["https://web.telegram.org/*"],
+      "css": ["css/telegramlogscraper.css"],
+      "js": ["js/jquery.min.js", "js/telegramlogscraper.js"]
+    }
+  ]
+}
