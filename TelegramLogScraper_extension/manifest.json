@@ -9,7 +9,7 @@
    },
    "manifest_version": 2,
    "name": "Telegram Log Scraper",
-   "permissions": [ "fileSystem", "https://web.telegram.org/" ],
+   "permissions": [ "https://web.telegram.org/" ],
    "version": "0.0.1",
    "content_scripts": [
     {
